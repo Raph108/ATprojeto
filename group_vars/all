@@ -1,0 +1,17 @@
+---
+aws_access_key: "AKIAXPE5QSDRZLW2RVS5"
+aws_secret_key: "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"
+
+application: "wordpress"
+target_env: "prod"
+aws_region: "us-east-1"
+aws_region_short: "ue1"
+aws_region_az: "c"
+vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+vpc_cidr_block: "172.27.0.0/16"
+public_subnet_1_cidr: "172.27.0.0/18"
+public_subnet_2_cidr: "172.27.64.0/18"
+private_subnet_1_cidr: "172.27.128.0/18"
+private_subnet_2_cidr: "172.27.192.0/18"
+keypair_name: "Raphael-key"
+ssh_pubkey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2jAWKvLfy6DWnFtpt4QbdNt0hOiu8/YLowpLUBykaClHeT8rpy+ZiI7xSq0fO7e1w2rso+U+vA8rX7BObepYenFlgAthHruyDKtmaCNbtUJ3W4/w/awZnNSMTFVAdiX+2Q30U1suQy3ppwcCPmuC6E+krD+umnU+wn2w9MVedwhZ68l6jlrgzEx9q0zQscqqVy/EckdzEQtQzWtX9JXB7zQMHflEvS1sBcGs6YYOWWJPYxhXUaN1QTCbKnEcQsTq34xw0ZZv0MH6+1DrtLv2jXkQ0KSDfcMIns1p1wHl5KwRHc2KtElqLOGFS4makAM0fa/U7JBIJ8pQOQvxH0UfRN7sbJ0p8JO+1wl89sfln9IDECQr2wBDaNq55tMrHuqwn3ezoiVSc6+XfEZGuoCbOkTxkV/Ezx2lTSXpuLfJfMpedV6VnT2Bnbv3AihAHhs72PDqyIGVVYAXItDE3y9lHwf8d/RtKqnFrRoGoHN3frAgQ35I5X/HS8y2lsDHq+TM= raphael'
